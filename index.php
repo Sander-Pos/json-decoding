@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+header('content-type: text/plain');
 
 $json = fopen("stof.json","r");
 $string = fread($json,filesize("stof.json"));
@@ -13,6 +14,6 @@ $stof = json_decode($string,true);
 //var_dump(json_decode($string));
 
 //print json data array
-var_dump($stof);
+print_r($stof);
 
 ?>
