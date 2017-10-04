@@ -11,8 +11,6 @@ $stof = array();
 //convert json stream to an array
 $stof = json_decode($string,true);
 
-//var_dump(json_decode($string));
-
 //print json data array
 print_r($stof);
 
